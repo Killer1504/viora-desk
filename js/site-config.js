@@ -24,15 +24,15 @@ window.siteConfig = {
   downloads: {
     windows: {
       version: 'v0.1.2',
-      fileSize: '112 MB',
+      fileSize: '211 MB',
       releaseDate: 'June 30, 2026',
-      url: 'https://example.com/downloads/viora-desktop/windows.exe'
+      url: 'https://drive.google.com/file/d/1P4z7TffR8jLn1R21bb8BKTR44zqHhhMs/view?usp=sharing'
     },
     macosUniversal: {
       version: 'v0.1.2',
-      fileSize: '121 MB',
+      fileSize: '211 MB',
       releaseDate: 'June 30, 2026',
-      url: 'https://example.com/downloads/viora-desktop/macos-universal.dmg'
+      url: 'https://drive.google.com/file/d/10vtREyxzD59zZfiy5NE5TiFlhJfmS8In/view?usp=sharing'
     }
   }
 };

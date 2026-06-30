@@ -60,6 +60,7 @@ Assert-Contains $index '<section class="downloads' 'index.html should include a 
 Assert-Contains $index '<section class="faq' 'index.html should include a FAQ section.'
 Assert-Contains $index 'js/site-config.js' 'index.html should load site-config.js.'
 Assert-Contains $index 'macOS Universal' 'index.html should present a macOS Universal download option.'
+Assert-Contains $index 'download-grid download-grid-balanced' 'index.html should mark the download grid as balanced.'
 
 $config = Get-Content -Raw js/site-config.js
 Assert-Contains $config 'window.siteConfig' 'site-config.js should expose window.siteConfig.'
@@ -74,6 +75,10 @@ Assert-Contains $main 'data-config-key' 'main.js should bind config values into 
 
 $components = Get-Content -Raw css/components.css
 Assert-Contains $components '.lightbox[hidden]' 'components.css should explicitly hide the lightbox when the hidden attribute is present.'
+
+$styles = Get-Content -Raw css/styles.css
+Assert-Contains $styles '.download-grid-balanced' 'styles.css should define a dedicated balanced download grid layout.'
+Assert-Contains $styles 'grid-template-columns: repeat(2, minmax(0, 1fr));' 'styles.css should keep the balanced download grid at two columns on larger screens.'
 
 $detectPlatform = Get-Content -Raw js/detect-platform.js
 Assert-Contains $detectPlatform 'navigator.platform' 'detect-platform.js should inspect platform information.'
