@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Viora Desktop logo</title>
+  <desc id="desc">Rounded square logo with layered gradients.</desc>
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C9CFF"/>
+      <stop offset="50%" stop-color="#89F0FF"/>
+      <stop offset="100%" stop-color="#9D7BFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="32" fill="#08111f"/>
+  <rect x="16" y="16" width="96" height="96" rx="26" fill="url(#g1)" opacity="0.18"/>
+  <path d="M37 41h54c5 0 9 4 9 9v28c0 5-4 9-9 9H37c-5 0-9-4-9-9V50c0-5 4-9 9-9z" fill="none" stroke="url(#g1)" stroke-width="8"/>
+  <path d="M46 57l18 17 18-17" fill="none" stroke="#EEF4FF" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

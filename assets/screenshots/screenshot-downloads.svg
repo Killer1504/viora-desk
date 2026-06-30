@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#0C1729"/>
+  <rect x="32" y="32" width="1136" height="696" rx="28" fill="#101d35" stroke="#24405f"/>
+  <text x="86" y="128" fill="#EEF4FF" font-family="Inter, Arial, sans-serif" font-size="38" font-weight="700">Release distribution</text>
+  <text x="86" y="170" fill="#9BB0D2" font-family="Inter, Arial, sans-serif" font-size="22">Version metadata, file sizes, and release dates in one place.</text>
+  <rect x="86" y="228" width="320" height="390" rx="24" fill="#132541"/>
+  <rect x="440" y="228" width="320" height="390" rx="24" fill="#0F1B31" stroke="#89F0FF"/>
+  <rect x="794" y="228" width="320" height="390" rx="24" fill="#132541"/>
+  <rect x="118" y="286" width="256" height="18" rx="9" fill="#89F0FF" opacity=".5"/>
+  <rect x="118" y="334" width="210" height="14" rx="7" fill="#9BB0D2" opacity=".45"/>
+  <rect x="118" y="380" width="182" height="14" rx="7" fill="#9BB0D2" opacity=".4"/>
+</svg>

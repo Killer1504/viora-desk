@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111f39"/>
+      <stop offset="50%" stop-color="#152747"/>
+      <stop offset="100%" stop-color="#0a1221"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" rx="28" fill="url(#bg)"/>
+  <circle cx="730" cy="120" r="90" fill="#89F0FF" opacity=".16"/>
+  <circle cx="220" cy="420" r="110" fill="#7C9CFF" opacity=".14"/>
+  <rect x="110" y="110" width="740" height="320" rx="24" fill="#0c1729" stroke="#28456f"/>
+  <text x="140" y="180" fill="#EEF4FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Demo coming soon</text>
+  <text x="140" y="228" fill="#9BB0D2" font-family="Inter, Arial, sans-serif" font-size="22">Replace this poster with a real product video or GIF.</text>
+  <circle cx="480" cy="292" r="54" fill="#89F0FF" opacity=".18"/>
+  <polygon points="465,262 465,322 520,292" fill="#EEF4FF"/>
+</svg>

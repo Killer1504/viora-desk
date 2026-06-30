@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="cover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1324"/>
+      <stop offset="45%" stop-color="#14233F"/>
+      <stop offset="100%" stop-color="#08111E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C9CFF"/>
+      <stop offset="50%" stop-color="#89F0FF"/>
+      <stop offset="100%" stop-color="#9D7BFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#cover)"/>
+  <circle cx="950" cy="110" r="140" fill="#89F0FF" opacity=".18"/>
+  <circle cx="180" cy="520" r="180" fill="#7C9CFF" opacity=".16"/>
+  <rect x="90" y="80" width="84" height="84" rx="24" fill="#08111F" stroke="url(#accent)" stroke-width="4"/>
+  <path d="M112 108h40c4 0 8 4 8 8v20c0 4-4 8-8 8h-40c-4 0-8-4-8-8v-20c0-4 4-8 8-8z" fill="none" stroke="url(#accent)" stroke-width="5"/>
+  <path d="M120 124l12 12 12-12" fill="none" stroke="#EEF4FF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="90" y="248" fill="#EEF4FF" font-family="Inter, Arial, sans-serif" font-size="66" font-weight="700">Viora Desktop</text>
+  <text x="90" y="314" fill="#C8D7F0" font-family="Inter, Arial, sans-serif" font-size="30">Premium internal desktop distribution without extra tooling.</text>
+  <rect x="90" y="376" width="430" height="66" rx="33" fill="url(#accent)"/>
+  <text x="124" y="420" fill="#08111E" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Windows, macOS Intel, Apple Silicon</text>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <rect width="1200" height="760" fill="#0C1729"/>
+  <rect x="32" y="32" width="1136" height="696" rx="28" fill="#101d35" stroke="#24405f"/>
+  <rect x="84" y="92" width="1032" height="134" rx="24" fill="#132541"/>
+  <rect x="84" y="258" width="492" height="372" rx="24" fill="#0F1B31"/>
+  <rect x="624" y="258" width="492" height="372" rx="24" fill="#132541"/>
+  <text x="126" y="152" fill="#EEF4FF" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Support and release notes</text>
+  <text x="126" y="192" fill="#9BB0D2" font-family="Inter, Arial, sans-serif" font-size="22">Placeholder view for FAQ, support contacts, and update communication.</text>
+  <rect x="126" y="322" width="408" height="18" rx="9" fill="#89F0FF" opacity=".4"/>
+  <rect x="126" y="370" width="354" height="14" rx="7" fill="#9BB0D2" opacity=".42"/>
+  <rect x="666" y="322" width="408" height="18" rx="9" fill="#89F0FF" opacity=".4"/>
+  <rect x="666" y="370" width="354" height="14" rx="7" fill="#9BB0D2" opacity=".42"/>
+</svg>
