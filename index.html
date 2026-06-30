@@ -65,7 +65,7 @@
             </span>
             <span class="meta-pill">
               <strong>Platforms</strong>
-              <span data-config-key="product.platformLabel">Windows, macOS Intel, macOS Apple Silicon</span>
+              <span data-config-key="product.platformLabel">Windows, macOS Universal</span>
             </span>
           </div>
 
@@ -73,7 +73,7 @@
             <a class="button button-primary download-link" data-platform-primary="windows" data-config-key="downloads.windows.url" data-config-attr="href" href="#">
               Download for Windows
             </a>
-            <a class="button button-secondary download-link" data-platform-primary="macos" data-config-key="downloads.macosAppleSilicon.url" data-config-attr="href" href="#">
+            <a class="button button-secondary download-link" data-platform-primary="macos" data-config-key="downloads.macosUniversal.url" data-config-attr="href" href="#">
               Download for macOS
             </a>
           </div>
@@ -206,36 +206,20 @@
             <a class="button button-primary button-block download-link" data-platform="windows" data-config-key="downloads.windows.url" data-config-attr="href" href="#">Download .exe</a>
           </article>
 
-          <article class="download-card reveal" data-reveal="up" data-platform="macos-intel">
+          <article class="download-card reveal" data-reveal="up" data-platform="macos">
             <div class="download-card-header">
               <img src="assets/icons/icon-macos.svg" alt="" width="28" height="28">
               <div>
-                <h3>macOS Intel</h3>
-                <p>For Intel-based Mac devices</p>
+                <h3>macOS Universal</h3>
+                <p>One build for both Intel and Apple Silicon Macs</p>
               </div>
             </div>
             <dl>
-              <div><dt>Version</dt><dd data-config-key="downloads.macosIntel.version">v1.4.2</dd></div>
-              <div><dt>File size</dt><dd data-config-key="downloads.macosIntel.fileSize">125 MB</dd></div>
-              <div><dt>Release date</dt><dd data-config-key="downloads.macosIntel.releaseDate">June 30, 2026</dd></div>
+              <div><dt>Version</dt><dd data-config-key="downloads.macosUniversal.version">v1.4.2</dd></div>
+              <div><dt>File size</dt><dd data-config-key="downloads.macosUniversal.fileSize">121 MB</dd></div>
+              <div><dt>Release date</dt><dd data-config-key="downloads.macosUniversal.releaseDate">June 30, 2026</dd></div>
             </dl>
-            <a class="button button-secondary button-block download-link" data-platform="macos-intel" data-config-key="downloads.macosIntel.url" data-config-attr="href" href="#">Download .dmg</a>
-          </article>
-
-          <article class="download-card reveal" data-reveal="up" data-platform="macos-apple-silicon">
-            <div class="download-card-header">
-              <img src="assets/icons/icon-macos-chip.svg" alt="" width="28" height="28">
-              <div>
-                <h3>macOS Apple Silicon</h3>
-                <p>For M-series Mac devices</p>
-              </div>
-            </div>
-            <dl>
-              <div><dt>Version</dt><dd data-config-key="downloads.macosAppleSilicon.version">v1.4.2</dd></div>
-              <div><dt>File size</dt><dd data-config-key="downloads.macosAppleSilicon.fileSize">118 MB</dd></div>
-              <div><dt>Release date</dt><dd data-config-key="downloads.macosAppleSilicon.releaseDate">June 30, 2026</dd></div>
-            </dl>
-            <a class="button button-secondary button-block download-link" data-platform="macos-apple-silicon" data-config-key="downloads.macosAppleSilicon.url" data-config-attr="href" href="#">Download .dmg</a>
+            <a class="button button-secondary button-block download-link" data-platform="macos" data-config-key="downloads.macosUniversal.url" data-config-attr="href" href="#">Download .dmg</a>
           </article>
         </div>
       </div>
@@ -273,7 +257,7 @@
               <span aria-hidden="true">+</span>
             </button>
             <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-button-3">
-              <p>Yes. Separate download cards are provided for Intel and Apple Silicon builds.</p>
+              <p>Yes. The page provides one macOS Universal build instead of separate Intel and Apple Silicon downloads.</p>
             </div>
           </article>
           <article class="faq-item reveal" data-reveal="up">

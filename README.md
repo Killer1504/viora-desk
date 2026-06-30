@@ -69,8 +69,7 @@ For best results:
 Update the URLs in `js/site-config.js`:
 
 - `downloads.windows.url`
-- `downloads.macosIntel.url`
-- `downloads.macosAppleSilicon.url`
+- `downloads.macosUniversal.url`
 
 You can also update each build’s version, file size, and release date in the same file.
 

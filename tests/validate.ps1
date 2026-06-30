@@ -59,10 +59,14 @@ Assert-Contains $index '<section class="screenshots' 'index.html should include 
 Assert-Contains $index '<section class="downloads' 'index.html should include a download section.'
 Assert-Contains $index '<section class="faq' 'index.html should include a FAQ section.'
 Assert-Contains $index 'js/site-config.js' 'index.html should load site-config.js.'
+Assert-Contains $index 'macOS Universal' 'index.html should present a macOS Universal download option.'
 
 $config = Get-Content -Raw js/site-config.js
 Assert-Contains $config 'window.siteConfig' 'site-config.js should expose window.siteConfig.'
 Assert-Contains $config 'downloads' 'site-config.js should define download metadata.'
+Assert-Contains $config 'macosUniversal' 'site-config.js should define a macOS Universal download entry.'
+Assert-True (-not $config.Contains('macosIntel')) 'site-config.js should not keep a separate macOS Intel entry.'
+Assert-True (-not $config.Contains('macosAppleSilicon')) 'site-config.js should not keep a separate macOS Apple Silicon entry.'
 
 $main = Get-Content -Raw js/main.js
 Assert-Contains $main 'window.siteConfig' 'main.js should read from window.siteConfig.'

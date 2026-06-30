@@ -3,7 +3,7 @@ window.siteConfig = {
     name: 'Viora Desk',
     slogan: 'One internal desktop app for faster, calmer team workflows.',
     version: 'v0.1.2',
-    platformLabel: 'Windows, macOS Intel, macOS Apple Silicon',
+    platformLabel: 'Windows, macOS Universal',
     releaseDate: 'June 30, 2026'
   },
   company: {
@@ -28,17 +28,11 @@ window.siteConfig = {
       releaseDate: 'June 30, 2026',
       url: 'https://example.com/downloads/viora-desktop/windows.exe'
     },
-    macosIntel: {
+    macosUniversal: {
       version: 'v0.1.2',
-      fileSize: '125 MB',
+      fileSize: '121 MB',
       releaseDate: 'June 30, 2026',
-      url: 'https://example.com/downloads/viora-desktop/macos-intel.dmg'
-    },
-    macosAppleSilicon: {
-      version: 'v0.1.2',
-      fileSize: '118 MB',
-      releaseDate: 'June 30, 2026',
-      url: 'https://example.com/downloads/viora-desktop/macos-apple-silicon.dmg'
+      url: 'https://example.com/downloads/viora-desktop/macos-universal.dmg'
     }
   }
 };
