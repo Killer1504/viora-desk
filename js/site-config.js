@@ -1,41 +1,41 @@
 window.siteConfig = {
   product: {
-    name: 'Viora Desktop',
+    name: 'Viora Desk',
     slogan: 'One internal desktop app for faster, calmer team workflows.',
-    version: 'v1.4.2',
+    version: 'v0.1.2',
     platformLabel: 'Windows, macOS Intel, macOS Apple Silicon',
     releaseDate: 'June 30, 2026'
   },
   company: {
-    copyrightName: 'Viora Labs',
+    copyrightName: 'Viora Desk',
     contactEmail: 'internal-support@example.com'
   },
   links: {
-    github: 'https://github.com/example/viora-desktop',
-    privacy: 'https://example.com/privacy',
-    terms: 'https://example.com/terms',
-    canonical: 'https://example.com/viora-desktop'
+    github: 'https://github.com/Killer1504',
+    privacy: 'https://github.com/Killer1504',
+    terms: 'https://github.com/Killer1504',
+    canonical: 'https://github.com/Killer1504'
   },
   seo: {
-    title: 'Viora Desktop | Internal desktop workspace',
-    description: 'Viora Desktop helps internal teams launch work faster with one reliable desktop workspace.',
+    title: 'Viora Desk | Internal desktop workspace',
+    description: 'Viora Desk helps managers review their staff faster with one reliable desktop workspace.',
     ogImage: 'assets/images/og-cover.svg'
   },
   downloads: {
     windows: {
-      version: 'v1.4.2',
+      version: 'v0.1.2',
       fileSize: '112 MB',
       releaseDate: 'June 30, 2026',
       url: 'https://example.com/downloads/viora-desktop/windows.exe'
     },
     macosIntel: {
-      version: 'v1.4.2',
+      version: 'v0.1.2',
       fileSize: '125 MB',
       releaseDate: 'June 30, 2026',
       url: 'https://example.com/downloads/viora-desktop/macos-intel.dmg'
     },
     macosAppleSilicon: {
-      version: 'v1.4.2',
+      version: 'v0.1.2',
       fileSize: '118 MB',
       releaseDate: 'June 30, 2026',
       url: 'https://example.com/downloads/viora-desktop/macos-apple-silicon.dmg'
