@@ -8,13 +8,13 @@ window.siteConfig = {
   },
   company: {
     copyrightName: 'Viora Desk',
-    contactEmail: 'internal-support@example.com'
+    contactEmail: 'thanhhungbkhn@gmail.com'
   },
   links: {
-    github: 'https://github.com/Killer1504',
-    privacy: 'https://github.com/Killer1504',
-    terms: 'https://github.com/Killer1504',
-    canonical: 'https://github.com/Killer1504'
+    github: 'https://github.com/Killer1504/viora-desk',
+    privacy: 'https://github.com/Killer1504/viora-desk',
+    terms: 'https://github.com/Killer1504/viora-desk',
+    canonical: 'https://github.com/Killer1504/viora-desk'
   },
   seo: {
     title: 'Viora Desk | Internal desktop workspace',
