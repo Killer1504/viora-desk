@@ -1,94 +1,41 @@
-# Viora Desktop Landing Page
+# Viora Desk
 
-Static landing page for an internal desktop application. The page is designed to feel premium like a modern SaaS site while staying easy to host on GitHub Pages and easy for non-developers to update.
+Viora Desk is a desktop application for KPI and employee performance reviews. It helps teams run review cycles with a clearer process, evaluate employees with more consistency, and turn raw performance data into practical signals for growth.
 
-## Project structure
+The app is designed for managers, HR teams, and internal operations teams that need one focused workspace for performance reviews instead of scattered spreadsheets, chat threads, and disconnected reports.
 
-```text
-/
-├── index.html
-├── css/
-│   ├── styles.css
-│   ├── components.css
-│   └── animations.css
-├── js/
-│   ├── site-config.js
-│   ├── main.js
-│   ├── animations.js
-│   └── detect-platform.js
-├── assets/
-│   ├── logo/
-│   ├── icons/
-│   ├── screenshots/
-│   ├── images/
-│   └── videos/
-├── favicon.ico
-└── README.md
-```
+## Core value
 
-## Local preview
+Viora Desk turns performance reviews into a structured workflow:
 
-No installation is required.
+- open and manage KPI cycles
+- review employees with consistent scoring and grading
+- monitor trends and score distribution from a dashboard
+- keep employee records aligned with VWork through data sync
 
-1. Clone or download the repository.
-2. Open `index.html` directly in your browser.
+## Main features
 
-Because the project uses only relative paths, it also works when served from a GitHub Pages project site.
+### KPI Cycle Management
 
-## Editing product information
+Create, open, review, and close KPI periods with a clear workflow.
 
-Open `js/site-config.js` to update the values that usually change between releases:
+### Employee Performance Reviews
 
-- product name
-- slogan
-- current version
-- release date
-- GitHub link
-- support email
-- privacy and terms links
-- download URLs
-- file sizes
+Score employees, assign grades, and capture strengths and improvement notes.
 
-`main.js` reads this config and injects the values into the page. You should not need to edit `main.js` for normal content updates.
+### Performance Dashboard
 
-## Replacing screenshots and visual assets
+Track average scores, grade distribution, trends, and leaderboard insights.
 
-- Replace `assets/screenshots/*.svg` with real screenshots. Keep filenames the same if you do not want to update HTML.
-- Replace `assets/images/demo-poster.svg` when you have a real demo thumbnail.
-- Replace `assets/logo/logo.svg` with the product logo.
-- Replace the icon SVG files in `assets/icons/` if you want a different visual language.
+### Employee Data Sync
 
-For best results:
+Sync employee records from VWork to keep local performance reviews up to date.
 
-- keep screenshots compressed
-- prefer SVG for icons and logo
-- use consistent aspect ratios for gallery images
+## Supported platforms
 
-## Changing download links
+- Windows
+- macOS Universal
 
-Update the URLs in `js/site-config.js`:
+## Product message
 
-- `downloads.windows.url`
-- `downloads.macosUniversal.url`
-
-You can also update each build’s version, file size, and release date in the same file.
-
-## GitHub Pages deployment
-
-This project is ready for GitHub Pages because it is fully static and uses no build process.
-
-1. Push the repository to GitHub.
-2. Open repository settings.
-3. Go to **Pages**.
-4. Set the source branch to the branch that contains this project.
-5. Save and wait for GitHub Pages to publish.
-
-After deployment:
-
-- update `links.canonical` in `js/site-config.js`
-- update `links.github` if needed
-- update the placeholder support email and legal links
-
-## License
-
-Add your company’s preferred license or internal usage notice here.
+Turn Performance Reviews into Clear Growth Signals.
