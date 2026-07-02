@@ -3,9 +3,9 @@ window.siteConfig = {
     name: 'Viora Desk',
     slogan: 'Turn Performance Reviews into Clear Growth Signals',
     description: 'Viora helps teams manage KPI cycles, evaluate employees with confidence, and turn performance data into actionable insights through a clean, focused desktop experience.',
-    version: 'v0.1.2',
+    version: 'v0.1.4',
     platformLabel: 'Windows, macOS Universal',
-    releaseDate: 'June 30, 2026'
+    releaseDate: 'July 2, 2026'
   },
   company: {
     copyrightName: 'Viora Desk',
