@@ -31,10 +31,9 @@ Track average scores, grade distribution, trends, and leaderboard insights.
 
 Sync employee records from VWork to keep local performance reviews up to date.
 
-## Supported platforms
+## Distribution
 
-- Windows
-- macOS Universal
+Viora Desk is distributed through one shared internal download link for the current release.
 
 ## Product message
 

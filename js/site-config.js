@@ -3,9 +3,9 @@ window.siteConfig = {
     name: 'Viora Desk',
     slogan: 'Turn Performance Reviews into Clear Growth Signals',
     description: 'Viora helps teams manage KPI cycles, evaluate employees with confidence, and turn performance data into actionable insights through a clean, focused desktop experience.',
-    version: 'v0.1.4',
-    platformLabel: 'Windows, macOS Universal',
-    releaseDate: 'July 2, 2026'
+    version: 'v0.1.5',
+    platformLabel: 'One shared download link',
+    releaseDate: 'July 6, 2026'
   },
   company: {
     copyrightName: 'Viora Desk',
@@ -23,17 +23,11 @@ window.siteConfig = {
     ogImage: 'assets/images/og-cover.svg'
   },
   downloads: {
-    windows: {
-      version: 'v0.1.4',
-      fileSize: '107 MB',
-      releaseDate: 'July 2, 2026',
-      url: 'https://drive.google.com/file/d/1P4z7TffR8jLn1R21bb8BKTR44zqHhhMs/view?usp=sharing'
-    },
-    macosUniversal: {
-      version: 'v0.1.4',
-      fileSize: '221 MB',
-      releaseDate: 'July 2, 2026',
-      url: 'https://drive.google.com/file/d/10vtREyxzD59zZfiy5NE5TiFlhJfmS8In/view?usp=sharing'
+    shared: {
+      version: 'v0.1.5',
+      fileSize: ' 200 MB',
+      releaseDate: 'July 6, 2026',
+      url: 'https://drive.google.com/drive/folders/1pPmjQthswXbwMwFfre3zaOsFG13j54dp?usp=sharing'
     }
   }
 };

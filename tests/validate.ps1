@@ -60,8 +60,11 @@ Assert-Contains $index '<section class="screenshots' 'index.html should include 
 Assert-Contains $index '<section class="downloads' 'index.html should include a download section.'
 Assert-Contains $index '<section class="faq' 'index.html should include a FAQ section.'
 Assert-Contains $index 'js/site-config.js' 'index.html should load site-config.js.'
-Assert-Contains $index 'macOS Universal' 'index.html should present a macOS Universal download option.'
-Assert-Contains $index 'download-grid download-grid-balanced' 'index.html should mark the download grid as balanced.'
+Assert-Contains $index 'One shared download for the current internal release' 'index.html should present a single shared download option.'
+Assert-True ([regex]::Matches($index, 'data-config-key="downloads.shared.url"').Count -ge 2) 'index.html should bind the shared download URL in both hero and download section.'
+Assert-True ([regex]::Matches($index, '<article class="download-card reveal"').Count -eq 1) 'index.html should render exactly one download card.'
+Assert-True (-not $index.Contains('Download for Windows')) 'index.html should not keep a Windows-specific download CTA.'
+Assert-True (-not $index.Contains('Download for macOS')) 'index.html should not keep a macOS-specific download CTA.'
 Assert-Contains $index 'Turn Performance Reviews into Clear Growth Signals' 'index.html should present the updated slogan.'
 Assert-Contains $index 'Viora helps teams manage KPI cycles, evaluate employees with confidence, and turn performance data into actionable insights through a clean, focused desktop experience.' 'index.html should present the updated product description.'
 Assert-Contains $index 'KPI Cycle Management' 'index.html should present the KPI Cycle Management feature.'
@@ -72,9 +75,11 @@ Assert-Contains $index 'Employee Data Sync' 'index.html should present the Emplo
 $config = Get-Content -Raw js/site-config.js
 Assert-Contains $config 'window.siteConfig' 'site-config.js should expose window.siteConfig.'
 Assert-Contains $config 'downloads' 'site-config.js should define download metadata.'
-Assert-Contains $config 'macosUniversal' 'site-config.js should define a macOS Universal download entry.'
+Assert-Contains $config 'shared' 'site-config.js should define a shared download entry.'
 Assert-Contains $config 'Turn Performance Reviews into Clear Growth Signals' 'site-config.js should define the updated slogan.'
 Assert-Contains $config 'Viora helps teams manage KPI cycles, evaluate employees with confidence, and turn performance data into actionable insights through a clean, focused desktop experience.' 'site-config.js should define the updated product description.'
+Assert-True (-not $config.Contains('downloads.windows')) 'site-config.js should not keep a separate Windows download entry.'
+Assert-True (-not $config.Contains('macosUniversal')) 'site-config.js should not keep a separate macOS Universal download entry.'
 Assert-True (-not $config.Contains('macosIntel')) 'site-config.js should not keep a separate macOS Intel entry.'
 Assert-True (-not $config.Contains('macosAppleSilicon')) 'site-config.js should not keep a separate macOS Apple Silicon entry.'
 
@@ -86,12 +91,11 @@ $components = Get-Content -Raw css/components.css
 Assert-Contains $components '.lightbox[hidden]' 'components.css should explicitly hide the lightbox when the hidden attribute is present.'
 
 $styles = Get-Content -Raw css/styles.css
-Assert-Contains $styles '.download-grid-balanced' 'styles.css should define a dedicated balanced download grid layout.'
-Assert-Contains $styles 'grid-template-columns: repeat(2, minmax(0, 1fr));' 'styles.css should keep the balanced download grid at two columns on larger screens.'
+Assert-Contains $styles '.download-grid' 'styles.css should define the download grid layout.'
 
 $detectPlatform = Get-Content -Raw js/detect-platform.js
-Assert-Contains $detectPlatform 'navigator.platform' 'detect-platform.js should inspect platform information.'
-Assert-Contains $detectPlatform 'data-platform' 'detect-platform.js should target platform-marked elements.'
+Assert-True (-not $detectPlatform.Contains('navigator.platform')) 'detect-platform.js should no longer inspect platform information.'
+Assert-True (-not $detectPlatform.Contains('data-platform')) 'detect-platform.js should no longer target platform-specific elements.'
 
 $readme = Get-Content -Raw README.md
 Assert-Contains $readme 'Viora Desk is a desktop application for KPI and employee performance reviews.' 'README should introduce the app.'
@@ -99,5 +103,7 @@ Assert-Contains $readme 'KPI Cycle Management' 'README should describe KPI Cycle
 Assert-Contains $readme 'Employee Performance Reviews' 'README should describe Employee Performance Reviews.'
 Assert-Contains $readme 'Performance Dashboard' 'README should describe the Performance Dashboard.'
 Assert-Contains $readme 'Employee Data Sync' 'README should describe Employee Data Sync.'
+Assert-True (-not $readme.Contains('Windows')) 'README should not list Windows separately.'
+Assert-True (-not $readme.Contains('macOS Universal')) 'README should not list macOS Universal separately.'
 
 Write-Host 'Validation passed.'

@@ -62,17 +62,14 @@
               <span data-config-key="product.version">v1.4.2</span>
             </span>
             <span class="meta-pill">
-              <strong>Platforms</strong>
-              <span data-config-key="product.platformLabel">Windows, macOS Universal</span>
+              <strong>Distribution</strong>
+              <span data-config-key="product.platformLabel">One shared download link</span>
             </span>
           </div>
 
           <div class="hero-actions">
-            <a class="button button-primary download-link" data-platform-primary="windows" data-config-key="downloads.windows.url" data-config-attr="href" href="#">
-              Download for Windows
-            </a>
-            <a class="button button-secondary download-link" data-platform-primary="macos" data-config-key="downloads.macosUniversal.url" data-config-attr="href" href="#">
-              Download for macOS
+            <a class="button button-primary download-link" data-config-key="downloads.shared.url" data-config-attr="href" href="#">
+              Download current release
             </a>
           </div>
 
@@ -173,41 +170,25 @@
       <div class="container">
         <div class="section-heading reveal" data-reveal="up">
           <span class="eyebrow">Download</span>
-          <h2>Choose the build that matches your device</h2>
-          <p>The page highlights the most likely option, but never starts a download automatically.</p>
+          <h2>One shared download for the current internal release</h2>
+          <p>Everyone uses the same release link, so the page stays simple and easy to maintain.</p>
         </div>
 
-        <div class="download-grid download-grid-balanced">
-          <article class="download-card reveal" data-reveal="up" data-platform="windows">
+        <div class="download-grid">
+          <article class="download-card reveal" data-reveal="up">
             <div class="download-card-header">
-              <img src="assets/icons/icon-windows.svg" alt="" width="28" height="28">
+              <img src="assets/icons/icon-app-window.svg" alt="" width="28" height="28">
               <div>
-                <h3>Windows</h3>
-                <p>Recommended for most internal users</p>
+                <h3>Current Release</h3>
+                <p>One shared download link for the latest internal build.</p>
               </div>
             </div>
             <dl>
-              <div><dt>Version</dt><dd data-config-key="downloads.windows.version">v1.4.2</dd></div>
-              <div><dt>File size</dt><dd data-config-key="downloads.windows.fileSize">112 MB</dd></div>
-              <div><dt>Release date</dt><dd data-config-key="downloads.windows.releaseDate">June 30, 2026</dd></div>
+              <div><dt>Version</dt><dd data-config-key="downloads.shared.version">v0.1.4</dd></div>
+              <div><dt>File size</dt><dd data-config-key="downloads.shared.fileSize">221 MB</dd></div>
+              <div><dt>Release date</dt><dd data-config-key="downloads.shared.releaseDate">July 2, 2026</dd></div>
             </dl>
-            <a class="button button-primary button-block download-link" data-platform="windows" data-config-key="downloads.windows.url" data-config-attr="href" href="#">Download .exe</a>
-          </article>
-
-          <article class="download-card reveal" data-reveal="up" data-platform="macos">
-            <div class="download-card-header">
-              <img src="assets/icons/icon-macos.svg" alt="" width="28" height="28">
-              <div>
-                <h3>macOS Universal</h3>
-                <p>One build for both Intel and Apple Silicon Macs</p>
-              </div>
-            </div>
-            <dl>
-              <div><dt>Version</dt><dd data-config-key="downloads.macosUniversal.version">v1.4.2</dd></div>
-              <div><dt>File size</dt><dd data-config-key="downloads.macosUniversal.fileSize">121 MB</dd></div>
-              <div><dt>Release date</dt><dd data-config-key="downloads.macosUniversal.releaseDate">June 30, 2026</dd></div>
-            </dl>
-            <a class="button button-secondary button-block download-link" data-platform="macos" data-config-key="downloads.macosUniversal.url" data-config-attr="href" href="#">Download .dmg</a>
+            <a class="button button-primary button-block download-link" data-config-key="downloads.shared.url" data-config-attr="href" href="#">Download current release</a>
           </article>
         </div>
       </div>
@@ -232,20 +213,20 @@
           </article>
           <article class="faq-item reveal" data-reveal="up">
             <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-button-2">
-              <span>Does it support Windows?</span>
+              <span>Why is there only one download link?</span>
               <span aria-hidden="true">+</span>
             </button>
             <div class="faq-panel" id="faq-panel-2" role="region" aria-labelledby="faq-button-2">
-              <p>Yes. Windows is treated as the default primary build and is highlighted automatically for Windows visitors.</p>
+              <p>The page now points everyone to the same internal release link, which keeps distribution simpler and avoids splitting users across separate download paths.</p>
             </div>
           </article>
           <article class="faq-item reveal" data-reveal="up">
             <button class="faq-trigger" type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-button-3">
-              <span>Does it support macOS?</span>
+              <span>What does the shared link include?</span>
               <span aria-hidden="true">+</span>
             </button>
             <div class="faq-panel" id="faq-panel-3" role="region" aria-labelledby="faq-button-3">
-              <p>Yes. The page provides one macOS Universal build instead of separate Intel and Apple Silicon downloads.</p>
+              <p>It points to the current internal release package defined in <code>js/site-config.js</code>, together with the version, file size, and release date shown on the page.</p>
             </div>
           </article>
           <article class="faq-item reveal" data-reveal="up">
