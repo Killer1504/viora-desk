@@ -1,8 +1,8 @@
 {
-    "version": "0.1.6",
+    "version": "0.1.7",
     "downloadUrl": "https://drive.google.com/drive/folders/1pPmjQthswXbwMwFfre3zaOsFG13j54dp?usp=sharing",
-    "publishedAt": "2026-07-08T10:30:00Z",
+    "publishedAt": "2026-07-09T10:30:00Z",
     "notes": [
-      "Update ui design and fix some bugs"
+      "Update ui"
     ]
   }
